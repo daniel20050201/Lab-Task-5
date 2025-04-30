@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JTMK - Department of ICT</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+		.social-media-sidebar {
+		position: fixed;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 999;
+		background: rgba(0,0,0,0.7);
+		padding: 10px 5px;
+		border-radius: 0 10px 10px 0;
+		}
+
+		.social-media-sidebar a {
+		display: block;
+		margin: 10px 0;
+		text-align: center;
+		}
+
+		.social-media-sidebar img {
+		width: 30px;
+		height: 30px;		
+		}
+
+		.main-content-with-sidebar {
+		margin-left: 50px !important;
+		}
+		
+        .ui-header .ui-title {
+            margin-left: 10px !important;
+        }
+        .logo-img {
+            height: 40px;
+            margin: 5px 0;
+        }
+        .member-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .intro-section {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            margin-bottom: 20px;
+        }
+        .member-card {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f8f8f8;
+            border-radius: 5px;
+        }
+        .fixed-header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .page-content {
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+    <div data-role="header" class="fixed-header" data-theme="b">
+    <div class="ui-grid-a">
+        <div class="ui-block-a" style="width:70%; white-space: nowrap;">
+            <img src="jtmk.jpeg" alt="JTMK Logo" class="logo-img" style="display:inline-block; vertical-align:middle;">
+            <span style="display:inline-block; vertical-align:middle; margin-left:10px; font-weight:bold;">JABATAN TEKNOLOGI MAKLUMAT</span>
+        </div>
+		<!-- Social Media Sidebar -->
+		<div class="social-media-sidebar">
+			<a href="https://facebook.com" target="_blank">
+			<img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook">
+			</a>
+			<a href="https://twitter.com" target="_blank">
+			<img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+			</a>
+			<a href="https://instagram.com" target="_blank">
+			<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+			</a>
+			<a href="https://youtube.com" target="_blank">
+			<img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube">
+			</a>
+		</div>
+		
+        <div class="ui-block-b" style="width:30%; text-align:right;">
+            <div data-role="navbar" style="padding:0; margin:0;">
+                <ul>
+                    <li><a href="#home" class="ui-btn-active">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div data-role="main" class="ui-content page-content main-content-with-sidebar">
+        <div class="intro-section">
+            <h1>HEY, MY NAME IS JTMK</h1>
+            <p>JTMK is the Department of Information and Communication Technology (JTMK) offering DDT courses (Diploma in Information Technology (Digital Technology)) at Seberang Perai Polytechnic (PSP).</p>
+            <a href="#projects" data-role="button" data-theme="b">PROJECTS</a>
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>Copyright © DDT4A S2 2024/2025. All rights reserved.</h4>
+    </div>
+</div>
+
+<!-- About Page -->
+<div data-role="page" id="about">
+    <div data-role="header" class="fixed-header" data-theme="b">
+    <div class="ui-grid-a">
+        <div class="ui-block-a" style="width:70%; white-space: nowrap;">
+            <img src="jtmk.jpeg" alt="JTMK Logo" class="logo-img" style="display:inline-block; vertical-align:middle;">
+            <span style="display:inline-block; vertical-align:middle; margin-left:10px; font-weight:bold;">JABATAN TEKNOLOGI MAKLUMAT</span>
+        </div>
+		<!-- Social Media Sidebar -->
+		<div class="social-media-sidebar">
+			<a href="https://facebook.com" target="_blank">
+			<img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook">
+			</a>
+			<a href="https://twitter.com" target="_blank">
+			<img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+			</a>
+			<a href="https://instagram.com" target="_blank">
+			<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+			</a>
+			<a href="https://youtube.com" target="_blank">
+			<img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube">
+			</a>
+		</div>
+        <div class="ui-block-b" style="width:30%; text-align:right;">
+            <div data-role="navbar" style="padding:0; margin:0;">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about"class="ui-btn-active">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div data-role="main" class="ui-content page-content">
+        <h2>Our Team</h2>
+        
+        <div class="member-card">
+            <div class="ui-grid-a">
+                <div class="ui-block-a" style="width:30%">
+                    <img src="pic2.jpg" class="member-photo">
+                </div>
+                <div class="ui-block-b" style="width:70%">
+                    <h3>Daniel Sim Xuan Huan</h3>
+                    <p>Head of Department</p>
+					<p>Program Head (Data Track)</p>
+                    <p>Phone: <a href="tel:+60161480352">+60 16-418 0352</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="member-card">
+            <div class="ui-grid-a">
+                <div class="ui-block-a" style="width:30%">
+                    <img src="pic3.jpg" class="member-photo">
+                </div>
+                <div class="ui-block-b" style="width:70%">
+                    <h3>Lau Zhin Thin</h3>
+                    <p>Program Head (Software Track)</p>
+                    <p>Phone: <a href="tel:+60107773226">+60 10-777 3226</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="member-card">
+            <div class="ui-grid-a">
+                <div class="ui-block-a" style="width:30%">
+                    <img src="pic1.jpg" class="member-photo">
+                </div>
+                <div class="ui-block-b" style="width:70%">
+                    <h3>Oon Chin Yong</h3>
+                    <p>Program Head (Software Track)</p>
+                    <p>Phone: <a href="tel:+60175442605">+60 17-544 2605</a></p>
+                </div>
+            </div>
+        </div>
+		
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>Copyright © DDT4A S2 2024/2025. All rights reserved.</h4>
+    </div>
+</div>
+
+<!-- Projects Page -->
+<div data-role="page" id="projects">
+    <div data-role="header" class="fixed-header" data-theme="b">
+    <div class="ui-grid-a">
+        <div class="ui-block-a" style="width:70%; white-space: nowrap;">
+            <img src="jtmk.jpeg" alt="JTMK Logo" class="logo-img" style="display:inline-block; vertical-align:middle;">
+            <span style="display:inline-block; vertical-align:middle; margin-left:10px; font-weight:bold;">JABATAN TEKNOLOGI MAKLUMAT</span>
+        </div>
+		<!-- Social Media Sidebar -->
+		<div class="social-media-sidebar">
+			<a href="https://facebook.com" target="_blank">
+			<img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook">
+			</a>
+			<a href="https://twitter.com" target="_blank">
+			<img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+			</a>
+			<a href="https://instagram.com" target="_blank">
+			<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+			</a>
+			<a href="https://youtube.com" target="_blank">
+			<img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube">
+			</a>
+		</div>
+        <div class="ui-block-b" style="width:30%; text-align:right;">
+            <div data-role="navbar" style="padding:0; margin:0;">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects"class="ui-btn-active">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div data-role="main" class="ui-content page-content main-content-with-sidebar">
+        <h2>Our Projects</h2>
+        
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <div class="ui-body ui-body-a">                
+                    <h3>Student Management System</h3>
+                    <p>A web application for managing student records and academic progress.</p>
+                    <a href="file:///C:/Users/User/Documents/PSP%20SEM%204/Lab%20Task5/Project%201.pdf" data-role="button" data-theme="b" target="_blank">View Report</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ui-grid-a" style="margin-top:20px">
+            <div class="ui-block-a">
+                <div class="ui-body ui-body-a">
+                    <h3>Data Visualization Tool</h3>
+                    <p>Interactive dashboard for analyzing large datasets.</p>
+                    <a href="file:///C:/Users/User/Documents/PSP%20SEM%204/Lab%20Task5/Project%202.pdf" data-role="button" data-theme="b" target="_blank">View Report</a>
+                </div>
+            </div>
+            <div class="ui-block-b">
+                <div class="ui-body ui-body-a">
+                    <h3>Mobile Learning App</h3>
+                    <p>Educational application for DDT students.</p>
+                    <a href="file:///C:/Users/User/Documents/PSP%20SEM%204/Lab%20Task5/Project%203.pdf" data-role="button" data-theme="b" target="_blank">View Report</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>Copyright © DDT4A S2 2024/2025. All rights reserved.</h4>
+    </div>
+</div>
+
+<!-- Contact Page -->
+<div data-role="page" id="contact">
+    <div data-role="header" class="fixed-header" data-theme="b">
+    <div class="ui-grid-a">
+        <div class="ui-block-a" style="width:70%; white-space: nowrap;">
+            <img src="jtmk.jpeg" alt="JTMK Logo" class="logo-img" style="display:inline-block; vertical-align:middle;">
+            <span style="display:inline-block; vertical-align:middle; margin-left:10px; font-weight:bold;">JABATAN TEKNOLOGI MAKLUMAT</span>
+        </div>
+		<!-- Social Media Sidebar -->
+		<div class="social-media-sidebar">
+			<a href="https://facebook.com" target="_blank">
+			<img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook">
+			</a>
+			<a href="https://twitter.com" target="_blank">
+			<img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+			</a>
+			<a href="https://instagram.com" target="_blank">
+			<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+			</a>
+			<a href="https://youtube.com" target="_blank">
+			<img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube">
+			</a>
+		</div>
+        <div class="ui-block-b" style="width:30%; text-align:right;">
+            <div data-role="navbar" style="padding:0; margin:0;">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact"class="ui-btn-active">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div data-role="main" class="ui-content page-content main-content-with-sidebar">
+        <h2>Contact Us</h2>
+        
+        <div class="ui-grid-solo">
+            <div class="ui-block-a">
+                <a href="tel:+6043823400" data-role="button" data-theme="b">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3059/3059518.png" style="height:20px; vertical-align:middle">
+                    Call Us: +60 4-382 3400
+                </a>
+            </div>
+            <div class="ui-block-a">
+                <a href="mailto:jtamk@psp.edu.my" data-role="button" data-theme="b">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" style="height:20px; vertical-align:middle">
+                    Email: jtmk@psp.edu.my
+                </a>
+            </div>
+            <div class="ui-block-a">
+                <a href="https://wa.me/60123456789?text=Hello%20JTMK" data-role="button" data-theme="b" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" style="height:20px; vertical-align:middle">
+                    WhatsApp: +60 12-345 6789
+                </a>
+            </div>
+        </div>
+        
+        <h3>Visit Us</h3>
+        <p>Jabatan Teknologi Maklumat & Komunikasi (JTMK)<br>
+        Politeknik Seberang Perai<br>
+        Mukim 6, Jalan Permatang Pauh,<br>
+        13500 Permatang Pauh, Pulau Pinang</p>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.234981193238!2d100.4332773147619!3d5.402738996097283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac9c8d0e9b1a5%3A0x7b9a5c0f1b5b0b0b!2sPoliteknik%20Seberang%20Perai!5e0!3m2!1sen!2smy!4v1621234567890!5m2!1sen!2smy" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>Copyright © DDT4A S2 2024/2025. All rights reserved.</h4>
+    </div>
+</div>
+
+</body>
+</html>
